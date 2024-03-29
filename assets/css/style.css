@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --primary-color: #5D15D1;
+    --secondary-color: #fff;
+    --tertiary-color: #7878799f;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header, main, section {
+    width: 100%;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: var(--secondary-color);
+
+}
+
+.cabecalho img {
+    width: 50px;
+}
+
+.cabecalho p {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.banner {
+    background-image: url(../img/bahia.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 80%;
+    height: 90%;
+    background: transparent;
+    border: 1px solid var(--tertiary-color);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    margin: 10px 0;
+    
+}
+
+.titulo-form {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.titulo-form img {
+    width: 20px;
+}
+
+.titulo-form h1 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+form {
+    padding: 20px;
+    width: 100%;
+    color: var(--secondary-color);
+}
+
+.dados-form {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.label-input {
+    display: flex;
+   flex-direction: column;
+}
+
+.label-input label, input {
+    margin-bottom: 10px;
+}
+
+.label-input input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--tertiary-color);
+    flex-basis: content;
+    outline: none;
+}
+
+.label-input input::placeholder{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.info-voo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    border: 1px solid var(--tertiary-color);
+}
+
+.info-voo div {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#ida, #volta, #origem, #destino{
+    margin: 10px 0;
+} 
