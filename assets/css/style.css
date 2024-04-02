@@ -11,14 +11,22 @@
     --primary-color: #5D15D1;
     --secondary-color: #fff;
     --tertiary-color: #7878799f;
+    --font-color: #1f1f1f9f;
+    --background-color: #D0D0D0;
 }
 
 body {
     min-height: 100vh;
+    background-color: var(--background-color);
 }
 
 header, main, section {
     width: 100%;
+}
+
+.largura-padrao {
+    width: 80%;
+    margin: 50px auto;
 }
 
 .cabecalho {
@@ -30,7 +38,7 @@ header, main, section {
 }
 
 .cabecalho img {
-    width: 50px;
+    width: 32px;
 }
 
 .cabecalho p {
@@ -51,14 +59,11 @@ header, main, section {
 }
 
 .form {
-    width: 80%;
     height: 90%;
     background: transparent;
     border: 1px solid var(--tertiary-color);
     backdrop-filter: blur(15px);
     border-radius: 10px;
-    margin: 20px 0;
-    
 }
 
 .titulo-form {
@@ -166,3 +171,106 @@ form {
     margin-left: 10px;
 }
 
+.form button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.ofertas h3 {
+    margin-bottom: 10px;
+}
+
+.ofertas span {
+    font-weight: bold;
+}
+
+.images {
+    width: 100%;
+}
+.images figure img {
+    width: 100%;
+    object-fit: cover;
+}
+
+figure {
+    margin: 20px 0;
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 3px;
+    padding: 5px 10px;
+    width: 100%;
+    background-color: var(--font-color);
+    color: var(--secondary-color);
+}
+
+.anuncios h3 {
+    margin-bottom: 15px;
+}
+
+.anuncios p {
+    margin-bottom: 15px;
+    color: var(--tertiary-color);
+}
+
+.card-anuncio {
+    width: 100%;
+}
+
+.card-anuncio div {
+    background-color: var(--secondary-color);
+}
+
+.card-anuncio img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card-anuncio h4 {
+    margin: 0 0 15px 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card-anuncio p {
+    padding: 0 0 15px 10px;
+    font-size: 14px;
+    color: var(--tertiary-color)
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.rodape {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+.card-rodape {
+    display: flex;
+    align-items: center;
+}
+
+.card-rodape span {
+    margin-bottom: 10px;
+}
+
+.rodape h4 {
+    margin-bottom: 10px;
+}
+
+.rodape img {
+    width: 20px;
+    margin: 0 10px 10px 0;
+}
