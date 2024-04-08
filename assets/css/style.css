@@ -24,17 +24,21 @@ header, main, section {
     width: 100%;
 }
 
+header {
+    background-color: var(--secondary-color);
+}
+
 .largura-padrao {
     width: 80%;
     margin: 50px auto;
 }
 
 .cabecalho {
+    width: 80%;
     display: flex;
     align-items: center;
     padding: 20px 10px;
-    background-color: var(--secondary-color);
-
+    margin: 0 auto;
 }
 
 .cabecalho img {
@@ -161,14 +165,8 @@ form {
 
 .check-preferences {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column;
     margin: 20px 0;
-}
-
-.check-preferences div {
-    margin-left: 10px;
 }
 
 .form button {
@@ -250,16 +248,16 @@ footer {
 }
 
 .rodape {
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 20px 0;
     margin: 0 auto;
 }
+
 .card-rodape {
     display: flex;
-    align-items: center;
 }
 
 .card-rodape span {
@@ -268,9 +266,92 @@ footer {
 
 .rodape h4 {
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .rodape img {
     width: 20px;
+    height: 20px;
     margin: 0 10px 10px 0;
+}
+
+/* Responsivo tablet*/
+
+@media (min-width: 541px) and (max-width: 768px) {
+    .cabecalho {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .info-voo {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .info-voo div {
+        width: 100%
+    }
+
+    .info-voo div input, select{
+        width: 90%;
+    }
+
+    .check-preferences {
+        flex-direction: row;
+        justify-content: left;
+        gap: 40px;
+    }
+
+    .form button {
+        width: 100%;
+    }
+
+    .limite-rodape {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+}
+
+/* Responsivo desktop */
+
+@media (min-width: 769px) and (max-width: 1440px){
+
+    .cabecalho {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    .largura-padrao {
+        max-width: 1024px;
+        margin: 50px auto;
+    }
+
+    .info-voo {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .info-voo div {
+        width: 100%
+    }
+
+    .info-voo div input, select{
+        width: 90%;
+    }
+
+    .check-preferences {
+        flex-direction: row;
+        justify-content: left;
+        gap: 40px;
+    }
+
+
+    .rodape {
+        max-width: 1024px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
 }
